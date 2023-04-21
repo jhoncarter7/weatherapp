@@ -1,0 +1,16 @@
+.weather_container{
+margin-top: 0;
+margin-bottom: 0px;
+}
+
+.first_container{
+ 
+    display: flex;
+    gap: 0.6rem;
+    margin-bottom: 7px;
+    
+}
+.sec_container{
+    display: flex;
+    gap: 6px;
+}

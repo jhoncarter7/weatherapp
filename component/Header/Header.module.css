@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   box-shadow:  0px 7px 5px -1px rgba(0,0,0,0.1);
+}
+.header h1{
+    cursor: pointer;
+    color: #666563;
+}
+
+.header_menu {
+    display: flex;
+    line-height: 3rem;
+    gap: 4rem;
+ 
+}
+.header_menu p{
+    cursor: pointer;
+}
+@media only screen and (max-width: 776px) {
+    .header_menu{
+        display: none;
+    }
+  
+}

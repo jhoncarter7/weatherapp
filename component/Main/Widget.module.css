@@ -1,0 +1,75 @@
+.weatherCurrency{
+   display: flex;
+   width: 100%;
+
+}
+
+.main_component{
+    display: flex;
+   width: 100%;
+    margin-top: 5rem;
+    min-height: 50%;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.weather{
+    text-align: center;
+    margin-top: 2rem;
+    border: 1px solid black;
+    min-height: 50vh;
+    width: inherit;
+}
+
+.weather ul{
+  list-style: none;
+  white-space: normal;
+}
+.currency{
+    border: 1px solid black;
+    /* width: 50%; */
+    min-height: 50%;
+    width: inherit;
+    margin-top: 2rem;
+    margin-bottom: 0px;
+}
+
+.currency ul{
+ list-style: none;
+ margin-top: 0;
+margin-bottom: 0;
+
+}
+
+
+.first_container{
+ 
+    display: flex;
+    gap: 0.6rem;
+    margin-bottom: 7px;
+    
+}
+.sec_container{
+    display: flex;
+    gap: 6px;
+}
+
+@media only screen and (max-width: 760px){
+    .weatherCurrency{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-right: 2rem;
+    }
+    .main_component {
+        width: inherit;
+    }
+    .weather{
+        margin-right: 2rem;
+        margin-top: 1rem;
+    }
+    .currency{
+       margin-right: 2rem;
+    }
+}
