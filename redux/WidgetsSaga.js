@@ -31,7 +31,7 @@ function* WorkgetWeatherFetch (){
     const citylatlng = yield select(state => state.widgets.citys)
 console.log("sagacity", citylatlng)
     // const cities = Object.keys(citylatlng)
-   if(citylatlng) {const widgets = yield  call(fetch, `http://api.weatherapi.com/v1/forecast.json?key=f5b2c47a0c784a14bf1135305231904&q=${citylatlng}&days=7`)
+   if(citylatlng) {const widgets = yield  call(fetch, `https://api.weatherapi.com/v1/forecast.json?key=f5b2c47a0c784a14bf1135305231904&q=${citylatlng}&days=7`)
     const resWidget = yield widgets.json()
     yield put(widgetState.getWeatherData({resWidget}))
    
