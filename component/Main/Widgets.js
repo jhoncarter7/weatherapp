@@ -45,7 +45,7 @@ function Widgets() {
 
 {/* currency data Table */}
       {currencyData ? currencyData.map((currencys) => (
-        <Currency key={cityCurrency} updateDate={currencys.currenciesresp.meta.last_updated_at} CADkey={currencys.currenciesresp.data.CAD.code} CADvalue={currencys.currenciesresp.data.CAD.value} EURkey={currencys.currenciesresp.data.EUR.code} EURvalue={currencys.currenciesresp.data.EUR.value} USDkey={currencys.currenciesresp.data.USD.code} USDvalue={currencys.currenciesresp.data.USD.value}/>
+        <Currency key={cityCurrency} currency={cityCurrency} CADkey={currencys.currenciesresp.data.CAD.code} CADvalue={currencys.currenciesresp.data.CAD.value} EURkey={currencys.currenciesresp.data.EUR.code} EURvalue={currencys.currenciesresp.data.EUR.value} USDkey={currencys.currenciesresp.data.USD.code} USDvalue={currencys.currenciesresp.data.USD.value}  updateDate={currencys.currenciesresp.meta.last_updated_at} />
       )) : <p>no currency</p>}
     </main>
   );

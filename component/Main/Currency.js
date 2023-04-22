@@ -1,8 +1,8 @@
 import React from 'react'
 import classes from "./Widget.module.css"
-function Currency({key, updatedDate, CADkey, CADvalue, EURkey, EURvalue, USDkey, USDvalue}) {
+function Currency({currency, updateDate, CADkey, CADvalue, EURkey, EURvalue, USDkey, USDvalue}) {
   return (
-    <div className={classes.main_component} key={key}>
+    <div className={classes.main_component} key={currency}>
     <div
       style={{
         position: "absolute",
@@ -19,7 +19,7 @@ function Currency({key, updatedDate, CADkey, CADvalue, EURkey, EURvalue, USDkey,
 
       <ul>
       <div className={classes.first_container}>
-        <li>On {updatedDate} {key} rate is</li>
+        <li>On {updateDate} {currency} rate is</li>
         <li> </li>
         </div>
         <div className={classes.sec_container}>
@@ -29,7 +29,7 @@ function Currency({key, updatedDate, CADkey, CADvalue, EURkey, EURvalue, USDkey,
       <hr />
       <ul>
       <div className={classes.first_container}>
-        <li>On {updatedDate} {key} rate is</li>
+        <li>On {updateDate} {currency} rate is</li>
         <li> </li>
         </div>
         <div className={classes.sec_container}>
@@ -40,7 +40,7 @@ function Currency({key, updatedDate, CADkey, CADvalue, EURkey, EURvalue, USDkey,
       
       <ul>
       <div className={classes.first_container}>
-        <li>On {updatedDate} {key} rate is</li>
+        <li>On {updateDate} {currency} rate is</li>
         <li> </li>
         </div>
         <div className={classes.sec_container}>
@@ -52,7 +52,7 @@ function Currency({key, updatedDate, CADkey, CADvalue, EURkey, EURvalue, USDkey,
 
       <ul>
       <div className={classes.first_container}>
-        <li>On {updatedDate} {key} rate is</li>
+        <li>On {updateDate} {currency} rate is</li>
         <li> </li>
         </div>
         <div className={classes.sec_container}>
@@ -64,7 +64,7 @@ function Currency({key, updatedDate, CADkey, CADvalue, EURkey, EURvalue, USDkey,
 
       <ul>
       <div className={classes.first_container}>
-        <li>On {updatedDate} {key} rate is</li>
+        <li>On {updateDate} {currency} rate is</li>
         <li> </li>
         </div>
         <div className={classes.sec_container}>
@@ -75,7 +75,7 @@ function Currency({key, updatedDate, CADkey, CADvalue, EURkey, EURvalue, USDkey,
 
       <ul>
       <div className={classes.first_container}>
-        <li>On {updatedDate} {key} rate is</li>
+        <li>On {updateDate} {currency} rate is</li>
         <li> </li>
         </div>
         <div className={classes.sec_container}>
@@ -86,7 +86,7 @@ function Currency({key, updatedDate, CADkey, CADvalue, EURkey, EURvalue, USDkey,
 
       <ul>
       <div className={classes.first_container}>
-        <li>On {updatedDate} {key} rate is</li>
+        <li>On {updateDate} {currency} rate is</li>
         <li> </li>
         </div>
         <div className={classes.sec_container}>
